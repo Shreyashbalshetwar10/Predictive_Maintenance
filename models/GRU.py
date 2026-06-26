@@ -19,7 +19,7 @@ def reset_seeds(seed_value= 81):
 
 reset_seeds()
 
-data_1 = np.loadtxt(r'/home/shreyash/Projects/Predictive_Maintenance/CMaps/train_FD001.txt')
+data_1 = np.loadtxt(r'data/train_FD001.txt')
 
 all_engine_data = []
 for engine_id in range(1, 101):
