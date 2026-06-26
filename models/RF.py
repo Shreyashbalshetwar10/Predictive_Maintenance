@@ -7,7 +7,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import cross_val_score
 
-data_1 = np.loadtxt(r'/home/shreyash/Projects/Predictive_Maintenance/CMaps/train_FD002.txt')
+data_1 = np.loadtxt(r'data/train_FD002.txt')
 
 all_engine_data = []
 
