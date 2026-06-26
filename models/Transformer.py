@@ -25,20 +25,20 @@ reset_seeds()
 sensor_columns = [f'sensor_{i}' for i in range(1, 22)]
 
 # Data Loading
-FD001 = pd.read_csv(r'/home/shreyash/Projects/Predictive_Maintenance/CMaps/train_FD001.txt', sep=" ", header=None)
-FD001.dropna(axis=1, how='all', inplace=True)  # Remove empty columns
+FD001 = pd.read_csv(r'data/train_FD001.txt', sep=" ", header=None)
+FD001.dropna(axis=1, how='all', inplace=True)
 FD001.columns = ['engine_id', 'cycle'] + ['S_1', 'S_2', 'S_3'] + sensor_columns
 
-FD002 = pd.read_csv(r'/home/shreyash/Projects/Predictive_Maintenance/CMaps/train_FD002.txt', sep=" ", header=None)
-FD002.dropna(axis=1, how='all', inplace=True)  # Remove empty columns
+FD002 = pd.read_csv(r'data/train_FD002.txt', sep=" ", header=None)
+FD002.dropna(axis=1, how='all', inplace=True)
 FD002.columns = ['engine_id', 'cycle'] + ['S_1', 'S_2', 'S_3'] + sensor_columns
 
-FD003 = pd.read_csv(r'/home/shreyash/Projects/Predictive_Maintenance/CMaps/train_FD003.txt', sep=" ", header=None)
-FD003.dropna(axis=1, how='all', inplace=True)  # Remove empty columns
+FD003 = pd.read_csv(r'data/train_FD003.txt', sep=" ", header=None)
+FD003.dropna(axis=1, how='all', inplace=True)
 FD003.columns = ['engine_id', 'cycle'] + ['S_1', 'S_2', 'S_3'] + sensor_columns
 
-FD004 = pd.read_csv(r'/home/shreyash/Projects/Predictive_Maintenance/CMaps/train_FD004.txt', sep=" ", header=None)
-FD004.dropna(axis=1, how='all', inplace=True)  # Remove empty columns
+FD004 = pd.read_csv(r'data/train_FD004.txt', sep=" ", header=None)
+FD004.dropna(axis=1, how='all', inplace=True) 
 FD004.columns = ['engine_id', 'cycle'] + ['S_1', 'S_2', 'S_3'] + sensor_columns
 
 FD002['engine_id'] += FD001['engine_id'].max()
