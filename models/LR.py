@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error
 
-data_1 = np.loadtxt(r'/home/shreyash/Projects/Predictive_Maintenance/CMaps/train_FD002.txt')
+data_1 = np.loadtxt(r'data/train_FD002.txt')
 
 all_engine_data = []
 
